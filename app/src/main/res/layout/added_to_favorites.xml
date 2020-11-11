@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ReadActivity">
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="673dp"
+        android:layout_above="@id/bookNameText"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="36dp"></WebView>
+
+    <TextView
+        android:id="@+id/bookNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/chrono"
+        android:layout_marginBottom="10dp"
+        android:text="TextView"
+        android:textSize="35sp"></TextView>
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chrono"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/remove"
+        android:layout_marginBottom="50dp"
+        android:text="chrono"
+        ></Chronometer>
+
+    <Button
+        android:id="@+id/remove"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/oval_button"
+        android:text="In favorites"
+        android:textColor="#fff"
+        android:layout_marginBottom="20dp"
+        ></Button>
+
+</RelativeLayout>
